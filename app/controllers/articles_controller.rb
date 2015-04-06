@@ -46,6 +46,7 @@ class ArticlesController < ApplicationController
 	def count
 		num_of_articles = Article.all.count
 		render :json => { count: num_of_articles }
+	end
 
 	private
 	def article_params
